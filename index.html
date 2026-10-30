@@ -9,6 +9,7 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Qiyuan Zheng">
 <meta property="og:url" content="https://qiyuanzheng.com/">
 <meta property="og:title" content="Qiyuan Zheng | Economics, Princeton University">
 <meta property="og:description" content="Ph.D. candidate in economics at Princeton University. Microeconomic theorist working on information and mechanism design. On the 2026–2027 job market.">
@@ -17,15 +18,41 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Qiyuan Zheng",
-  "url": "https://qiyuanzheng.com/",
-  "image": "https://qiyuanzheng.com/photo.jpg",
-  "email": "mailto:qiyuan.zheng@princeton.edu",
-  "jobTitle": "Ph.D. Candidate in Economics",
-  "affiliation": { "@type": "CollegeOrUniversity", "name": "Princeton University", "url": "https://economics.princeton.edu/" },
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Wesleyan University" },
-  "knowsAbout": ["Microeconomic theory", "Information design", "Mechanism design", "Behavioral economics"]
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://qiyuanzheng.com/#website",
+      "name": "Qiyuan Zheng",
+      "url": "https://qiyuanzheng.com/",
+      "about": {
+        "@id": "https://qiyuanzheng.com/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Qiyuan Zheng",
+      "url": "https://qiyuanzheng.com/",
+      "image": "https://qiyuanzheng.com/photo.jpg",
+      "email": "mailto:qiyuan.zheng@princeton.edu",
+      "jobTitle": "Ph.D. Candidate in Economics",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Princeton University",
+        "url": "https://economics.princeton.edu/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Wesleyan University"
+      },
+      "knowsAbout": [
+        "Microeconomic theory",
+        "Information design",
+        "Mechanism design",
+        "Behavioral economics"
+      ],
+      "@id": "https://qiyuanzheng.com/#person"
+    }
+  ]
 }
 </script>
 <script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
@@ -180,7 +207,7 @@
     <ul class="nav">
       <li><a href="#research">Research</a></li>
       <li><a href="#teaching">Teaching</a></li>
-      <li><a href="cv.pdf">CV</a></li>
+      <li><a href="QiyuanZheng_CV.pdf">CV</a></li>
     </ul>
   </div>
 </nav>
@@ -200,7 +227,7 @@
       <p class="bio">Welcome! I am a microeconomic theorist with interests in information and mechanism design. My research examines how information structures shape incentives and welfare. I am on the 2026–2027 job market.</p>
       <ul class="links">
         <li><a href="mailto:qiyuan.zheng@princeton.edu">qiyuan.zheng@princeton.edu</a></li>
-        <li><a href="cv.pdf">CV</a></li>
+        <li><a href="QiyuanZheng_CV.pdf">CV</a></li>
       </ul>
     </div>
   </header>
@@ -209,9 +236,9 @@
     <h2 id="jmp-h">Job market paper</h2>
     <ul class="papers">
       <li class="jmp">
-        <p class="title"><a class="title-link" href="jmp.pdf">Regulating Discretion: Information Design with Privately Known Common Interests</a><a class="pdf" href="jmp.pdf">PDF</a></p>
+        <p class="title"><a class="title-link" href="QiyuanZheng_JMP.pdf">Regulating Discretion: Information Design with Privately Known Common Interests</a><a class="pdf" href="QiyuanZheng_JMP.pdf">PDF</a></p>
         <p class="meta">Latest draft: <time id="jmp-date" datetime="2026-10-27">October 27, 2026</time></p>
-        <p class="abstract clamped" id="jmp-abstract"><strong>Abstract:</strong> A principal regulates the information of an agent who privately knows which statistic of the state determines both parties’ payoffs from his action. The agent’s payoff is this common component plus a bias: a second statistic that does not vary with his private information. When the statistics are correlated, the principal faces a trade-off: information that helps the agent optimize the common component may also tilt his action toward his bias. We study this setting: the relevant statistic is a weighted average of two merit dimensions of the state, and the bias is a third dimension. The private information of the agent is the weight of the merit dimensions. We show that every experiment in the optimal menu is a weighted scoring rule: the agent acts exactly when a weighted sum of the merit dimensions exceeds a bias-dependent threshold. Further, the optimal menu features distortions along the merit dimensions: the scoring rule an agent selects generally weighs them differently from the common relevant statistic. Blinding the agent to the bias is optimal only in a knife-edge case; otherwise every blind menu is strictly dominated by scoring rules whose thresholds depend on the bias.</p>
+        <p class="abstract clamped" id="jmp-abstract"><strong>Abstract:</strong> A principal regulates the information of an agent who privately knows which statistic of the state determines both parties’ payoffs from his action. The agent’s payoff is this shared component plus a bias, a second statistic of the state. When the statistics are correlated, information that helps the agent learn about the shared statistic may also serve his bias. Our main result characterizes the optimal mechanism, which exhibits two distortions that arise from screening. First, the agent evaluates the state by a virtual statistic rather than his own. Second, the agent conditions on the bias statistic when making his decision. We benchmark the optimal mechanism against simpler alternatives, such as full information and mechanisms that do not condition on the bias statistic. In particular, when the agent can exploit the correlation, forbidding the use of a protected characteristic distorts his evaluation of the state more than the optimal mechanism does.</p>
         <button class="toggle jmp-more" type="button" aria-expanded="false" aria-controls="jmp-abstract">Show full abstract</button>
       </li>
     </ul>
@@ -270,12 +297,12 @@
 
 </main>
 <script>
-  // Fill in the JMP date from the last time jmp.pdf was uploaded to GitHub.
+  // Fill in the JMP date from the last time QiyuanZheng_JMP.pdf was uploaded to GitHub.
   // If GitHub can't be reached, the date written above stays.
   (function () {
     var el = document.getElementById('jmp-date');
     if (!el || !window.fetch) return;
-    fetch('https://api.github.com/repos/qiyuanzheng-econ/qiyuanzheng-econ.github.io/commits?path=jmp.pdf&per_page=1')
+    fetch('https://api.github.com/repos/qiyuanzheng-econ/qiyuanzheng-econ.github.io/commits?path=QiyuanZheng_JMP.pdf&per_page=1')
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
       .then(function (commits) {
         if (!commits.length) return;
