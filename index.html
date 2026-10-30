@@ -106,7 +106,12 @@
 
   .title { font-weight: 700; line-height: 1.4; margin: 0; }
   .jmp .title { font-size: 1.3rem; line-height: 1.35; }
-  .title .pdf { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; margin-left: 0.55rem; white-space: nowrap; }
+  .title-link { color: inherit; text-decoration: none; }
+  .title-link:hover { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  .title .pdf { display: inline-block; font-family: var(--sans); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.02em; line-height: 1.35;
+    margin-left: 0.75rem; padding: 0.12rem 0.6rem; border: 1.5px solid var(--accent); border-radius: 5px; text-decoration: none; vertical-align: 0.12em; white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease; }
+  .title .pdf:hover { background: var(--accent); color: #fff; }
   .meta { font-family: var(--sans); font-size: 0.875rem; color: var(--muted); margin: 0.2rem 0 0; }
   .abstract { margin: 0.8rem 0 0; hyphens: auto; }
 
@@ -154,6 +159,7 @@
     h1 { font-size: 1.6rem; margin: 0; text-align: center; }
     h2 { font-size: 1.35rem; }
     .jmp .title { font-size: 1.15rem; }
+    .title .pdf { display: table; margin: 0.45rem 0 0; }
     .role { font-size: 1rem; margin: 0.25rem 0 0; text-align: center; }
     .body { justify-self: stretch; }
     .js .jmp .abstract.clamped { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden; }
@@ -162,7 +168,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .toggle::after, .js .topbar, .js .home { transition: none; }
+    .toggle::after, .js .topbar, .js .home, .title .pdf { transition: none; }
   }
 </style>
 </head>
@@ -203,7 +209,7 @@
     <h2 id="jmp-h">Job market paper</h2>
     <ul class="papers">
       <li class="jmp">
-        <p class="title">Regulating Discretion: Information Design with Privately Known Common Interests<a class="pdf" href="jmp.pdf">PDF</a></p>
+        <p class="title"><a class="title-link" href="jmp.pdf">Regulating Discretion: Information Design with Privately Known Common Interests</a><a class="pdf" href="jmp.pdf">PDF</a></p>
         <p class="meta">Latest draft: <time id="jmp-date" datetime="2026-10-27">October 27, 2026</time></p>
         <p class="abstract clamped" id="jmp-abstract"><strong>Abstract:</strong> A principal regulates the information of an agent who privately knows which statistic of the state determines both parties’ payoffs from his action. The agent’s payoff is this common component plus a bias: a second statistic that does not vary with his private information. When the statistics are correlated, the principal faces a trade-off: information that helps the agent optimize the common component may also tilt his action toward his bias. We study this setting: the relevant statistic is a weighted average of two merit dimensions of the state, and the bias is a third dimension. The private information of the agent is the weight of the merit dimensions. We show that every experiment in the optimal menu is a weighted scoring rule: the agent acts exactly when a weighted sum of the merit dimensions exceeds a bias-dependent threshold. Further, the optimal menu features distortions along the merit dimensions: the scoring rule an agent selects generally weighs them differently from the common relevant statistic. Blinding the agent to the bias is optimal only in a knife-edge case; otherwise every blind menu is strictly dominated by scoring rules whose thresholds depend on the bias.</p>
         <button class="toggle jmp-more" type="button" aria-expanded="false" aria-controls="jmp-abstract">Show full abstract</button>
