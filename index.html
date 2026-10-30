@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qiyuan Zheng | Economics, Princeton University</title>
+<meta name="description" content="Qiyuan Zheng, Ph.D. candidate in economics at Princeton University. Microeconomic theorist working on information and mechanism design. On the 2026–2027 academic job market.">
+<link rel="canonical" href="https://qiyuanzheng.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qiyuanzheng.com/">
+<meta property="og:title" content="Qiyuan Zheng | Economics, Princeton University">
+<meta property="og:description" content="Ph.D. candidate in economics at Princeton University. Microeconomic theorist working on information and mechanism design. On the 2026–2027 academic job market.">
+<meta property="og:image" content="https://qiyuanzheng.com/photo.jpg">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Qiyuan Zheng",
+  "url": "https://qiyuanzheng.com/",
+  "image": "https://qiyuanzheng.com/photo.jpg",
+  "email": "mailto:qiyuan.zheng@princeton.edu",
+  "jobTitle": "Ph.D. Candidate in Economics",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Princeton University", "url": "https://economics.princeton.edu/" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Wesleyan University" },
+  "knowsAbout": ["Microeconomic theory", "Information design", "Mechanism design", "Behavioral economics"]
+}
+</script>
+<script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FFFFFF;
+    --ink: #1C2230;
+    --muted: #5B6475;
+    --rule: #DCE1E8;
+    --accent: #1F4F8A;
+    --bar-h: 3.25rem;
+    --page: 60rem;
+    --serif: "Lato", "Helvetica Neue", Arial, sans-serif;
+    --sans: "Lato", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    line-height: 1.65;
+  }
+
+  a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* Top bar: stays pinned while scrolling */
+  .topbar { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--rule); }
+  .bar { max-width: var(--page); height: var(--bar-h); margin: 0 auto; padding: 0 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .home { font-weight: 700; color: var(--ink); text-decoration: none; white-space: nowrap; }
+
+  /* At the top of the page the bar shows only the links; the name and rule
+     appear once the large name has scrolled out of view. */
+  .js .topbar { border-bottom-color: transparent; transition: border-color 0.2s ease; }
+  .js .home { opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s; }
+  .js .topbar.scrolled { border-bottom-color: var(--rule); }
+  .js .topbar.scrolled .home { opacity: 1; visibility: visible; }
+  .nav { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; font-family: var(--sans); font-size: 0.9rem; }
+  .nav a { color: var(--ink); text-decoration: none; }
+  .nav a:hover { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; }
+
+  .wrap { max-width: var(--page); margin: 0 auto; padding: 2rem 1.25rem 2.5rem; }
+
+  /* Intro: compact, so the job market paper shows without scrolling */
+  .intro {
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-areas: "photo head" "photo body";
+    grid-template-rows: auto 1fr;
+    column-gap: 2.75rem;
+  }
+  .photo { grid-area: photo; display: block; }
+  .photo img { display: block; width: 100%; height: auto; border-radius: 6px; }
+  .head { grid-area: head; }
+  .body { grid-area: body; }
+  h1 { font-size: 2.6rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 0.25rem; }
+  .role { font-size: 1.15rem; color: var(--muted); margin: 0 0 1rem; }
+  .bio { font-size: 1.125rem; line-height: 1.65; margin: 0; }
+  .links { font-family: var(--sans); font-size: 1rem; list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; }
+
+  /* Sections */
+  section { margin-top: 2.5rem; scroll-margin-top: calc(var(--bar-h) + 1.25rem); }
+  section + section { margin-top: 3.25rem; }
+  h2 { font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin: 0 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--rule); }
+
+  .papers { list-style: none; margin: 0; padding: 0; }
+  .papers > li + li { margin-top: 1.5rem; }
+
+  .title { font-weight: 700; line-height: 1.4; margin: 0; }
+  .jmp .title { font-size: 1.15rem; }
+  .title .pdf { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; margin-left: 0.55rem; white-space: nowrap; }
+  .meta { font-family: var(--sans); font-size: 0.875rem; color: var(--muted); margin: 0.2rem 0 0; }
+  .abstract { margin: 0.8rem 0 0; hyphens: auto; }
+
+  /* Working papers: abstract toggle and PDF link under each title */
+  .actions { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin: 0.45rem 0 0; font-family: var(--sans); font-size: 0.875rem; }
+  .toggle {
+    appearance: none; background: none; border: 0; padding: 0; margin: 0;
+    font: inherit; color: var(--accent); cursor: pointer;
+    text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em;
+    display: inline-flex; align-items: center; gap: 0.45rem;
+  }
+  .toggle:hover { text-decoration-thickness: 2px; }
+  .toggle::after {
+    content: ""; width: 0.38rem; height: 0.38rem;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.15s ease;
+  }
+  .toggle[aria-expanded="true"]::after { transform: translateY(1px) rotate(-135deg); }
+  .abs { margin: 0.7rem 0 0; padding-left: 1rem; border-left: 2px solid var(--rule); hyphens: auto; }
+
+  /* JMP abstract: always open on larger screens; on phones it shows four lines until expanded */
+  .jmp-more { display: none; font-family: var(--sans); font-size: 0.875rem; margin-top: 0.45rem; }
+
+  footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+  footer p { margin: 0; }
+
+  /* Shown in place of a PDF link until the draft is posted */
+  .soon { color: var(--muted); }
+
+  /* Narrow windows and tablets: scale the intro down a step */
+  @media (max-width: 900px) and (min-width: 641px) {
+    .intro { grid-template-columns: 12rem 1fr; column-gap: 2rem; }
+    h1 { font-size: 2.2rem; }
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 1.0625rem; }
+    .bio { font-size: 1rem; line-height: 1.6; }
+    .links { font-size: 0.9rem; margin-top: 0.7rem; }
+    .wrap { padding-top: 1.5rem; }
+    /* Phones: square photo centered on top, then name, then bio */
+    .intro { grid-template-columns: 1fr; grid-template-areas: "photo" "head" "body"; grid-template-rows: auto auto auto; row-gap: 0.9rem; justify-items: center; }
+    .photo { width: 76%; max-width: 18rem; }
+    h1 { font-size: 1.6rem; margin: 0; text-align: center; }
+    .role { font-size: 1rem; margin: 0.25rem 0 0; text-align: center; }
+    .body { justify-self: stretch; }
+    .js .jmp .abstract.clamped { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden; }
+    .js .jmp-more { display: inline-flex; }
+    .nav { gap: 1.1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .toggle::after, .js .topbar, .js .home { transition: none; }
+  }
+</style>
+</head>
+<body id="top">
+
+<nav class="topbar" aria-label="Site">
+  <div class="bar">
+    <a class="home" href="#top">Qiyuan Zheng</a>
+    <ul class="nav">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="cv.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <header class="intro">
+    <picture class="photo">
+      <source media="(max-width: 640px)" srcset="photo-square.jpg" width="900" height="900">
+      <img src="photo.jpg" width="720" height="900" alt="Qiyuan Zheng">
+    </picture>
+    <div class="head">
+      <h1>Qiyuan Zheng</h1>
+      <p class="role">Ph.D. Candidate in Economics, Princeton University</p>
+    </div>
+    <div class="body">
+      <p class="bio">Welcome! I am a microeconomic theorist with interests in information and mechanism design. My research examines how information structures shape incentives and welfare. I am on the 2026–2027 academic job market.</p>
+      <ul class="links">
+        <li><a href="mailto:qiyuan.zheng@princeton.edu">qiyuan.zheng@princeton.edu</a></li>
+        <li><a href="cv.pdf">CV</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="research" aria-labelledby="jmp-h">
+    <h2 id="jmp-h">Job market paper</h2>
+    <ul class="papers">
+      <li class="jmp">
+        <p class="title">Regulating Discretion: Information Design with Privately Known Common Interests<a class="pdf" href="jmp.pdf">PDF</a></p>
+        <p class="meta">Latest draft: <time id="jmp-date" datetime="2026-10-27">October 27, 2026</time></p>
+        <p class="abstract clamped" id="jmp-abstract"><strong>Abstract:</strong> A principal regulates the information of an agent who privately knows which statistic of the state determines both parties’ payoffs from his action. The agent’s payoff is this common component plus a bias: a second statistic that does not vary with his private information. When the statistics are correlated, the principal faces a trade-off: information that helps the agent optimize the common component may also tilt his action toward his bias. We study this setting: the relevant statistic is a weighted average of two merit dimensions of the state, and the bias is a third dimension. The private information of the agent is the weight of the merit dimensions. We show that every experiment in the optimal menu is a weighted scoring rule: the agent acts exactly when a weighted sum of the merit dimensions exceeds a bias-dependent threshold. Further, the optimal menu features distortions along the merit dimensions: the scoring rule an agent selects generally weighs them differently from the common relevant statistic. Blinding the agent to the bias is optimal only in a knife-edge case; otherwise every blind menu is strictly dominated by scoring rules whose thresholds depend on the bias.</p>
+        <button class="toggle jmp-more" type="button" aria-expanded="false" aria-controls="jmp-abstract">Show full abstract</button>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="papers-h">
+    <h2 id="papers-h">Working papers</h2>
+    <ul class="papers">
+      <li>
+        <p class="title">Strategically Ambiguous Deterrence</p>
+        <p class="meta">With Yiying Tan</p>
+        <p class="actions">
+          <button class="toggle" type="button" aria-expanded="false" aria-controls="abs-deterrence">Abstract</button>
+          <span class="soon">Draft coming soon</span>
+        </p>
+        <p class="abs" id="abs-deterrence" hidden>We study deterrence when agents are ambiguity averse. A principal chooses a schedule of penalties across levels of compliance and how much of that schedule to disclose. When only aggregates are disclosed — the marginal distributions of penalties and of compliance — agents cannot infer the penalty attached to each level of compliance, and evaluate each level at the worst case consistent with what they observe. Obfuscation is therefore efficient: it sustains any given profile of perceived penalties at a strictly lower expected penalty cost. We show that this does not imply obfuscation is optimal: since the distribution of compliance is itself determined by agents’ behavior, the profiles that obfuscation can sustain are restricted by an equilibrium requirement. We characterize the implementable set: obfuscation can sustain a perceived penalty profile if and only if the perceived penalty for partial compliance, weighted by the mass of partial compliers, covers the perceived gap between partial and zero compliance, weighted by the mass of zero compliers. Obfuscation therefore compresses perceived penalties across compliance levels, and a principal who needs a large marginal increase in penalties (to prevent escalation) may strictly prefer transparency. We give sufficient conditions for each.</p>
+      </li>
+      <li>
+        <p class="title">Can Fact-Checking Backfire? Mixing Information When the Source Is Hidden</p>
+        <p class="actions">
+          <button class="toggle" type="button" aria-expanded="false" aria-controls="abs-factcheck">Abstract</button>
+          <span class="soon">Draft coming soon</span>
+        </p>
+        <p class="abs" id="abs-factcheck" hidden>This paper studies the problem of a designer that tries to improve the decision making of an agent by injecting verified information into their news source. When the agent cannot observe the underlying signal structure, they cannot distinguish whether the signal they observe is drawn from the status-quo or the verified information source. I first show that mixing in Blackwell-dominant information sources, even perfect information, may reduce the agent’s payoff in simple decision problems. Therefore, naive fact-checking may be harmful to the agent. I then study a problem in which the designer may garble the verified information before injecting it into the agent’s news feed. I show that this problem reduces to choosing how to pool states into existing signal labels. When the designer’s influence over the news feed is small, I characterize exactly when unaltered fact-checking is optimal, and show how pooling states prevents the misreadings that make fact-checking costly.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="wip-h">
+    <h2 id="wip-h">Work in progress</h2>
+    <ul class="papers">
+      <li>
+        <p class="title">Multi-Stage Application Processes for Distributional Concerns</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="teaching" aria-labelledby="teaching-h">
+    <h2 id="teaching-h">Teaching</h2>
+    <ul class="papers">
+      <li>
+        <p class="title">ECO 501: Graduate Microeconomics I</p>
+        <p class="meta">Teaching assistant, Princeton University, Fall 2023, Fall 2024, Fall 2025</p>
+      </li>
+      <li>
+        <p class="title">ECO 300: Undergraduate Microeconomics</p>
+        <p class="meta">Teaching assistant, Princeton University, Spring 2024</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Department of Economics, Julis Romo Rabinowitz Building, Princeton University, Princeton, NJ 08544</p>
+    <p>Last updated October 2026</p>
+  </footer>
+
+</main>
+<script>
+  // Fill in the JMP date from the last time jmp.pdf was uploaded to GitHub.
+  // If GitHub can't be reached, the date written above stays.
+  (function () {
+    var el = document.getElementById('jmp-date');
+    if (!el || !window.fetch) return;
+    fetch('https://api.github.com/repos/qiyuanzheng-econ/qiyuanzheng-econ.github.io/commits?path=jmp.pdf&per_page=1')
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function (commits) {
+        if (!commits.length) return;
+        var iso = commits[0].commit.committer.date;
+        el.textContent = new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/New_York' });
+        el.setAttribute('datetime', new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/New_York' }));
+      })
+      .catch(function () {});
+  })();
+
+  // Show the small name in the top bar only after the large name scrolls away.
+  (function () {
+    var bar = document.querySelector('.topbar');
+    var name = document.querySelector('h1');
+    if (!bar || !name || !('IntersectionObserver' in window)) return;
+    document.documentElement.classList.add('js');
+    var barHeight = bar.offsetHeight;
+    new IntersectionObserver(function (entries) {
+      bar.classList.toggle('scrolled', !entries[0].isIntersecting);
+    }, { rootMargin: '-' + barHeight + 'px 0px 0px 0px' }).observe(name);
+  })();
+
+  var more = document.querySelector('.jmp-more');
+  if (more) more.addEventListener('click', function () {
+    var abs = document.getElementById('jmp-abstract');
+    var open = more.getAttribute('aria-expanded') === 'true';
+    more.setAttribute('aria-expanded', String(!open));
+    abs.classList.toggle('clamped', open);
+    more.textContent = open ? 'Show full abstract' : 'Show less';
+  });
+
+  document.querySelectorAll('.toggle:not(.jmp-more)').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+    });
+  });
+</script>
+</body>
+</html>
